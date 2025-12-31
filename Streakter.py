@@ -1,8 +1,18 @@
+import os
+from dotenv import load_dotenv
 import requests
 from datetime import date
 
+load_dotenv()
+
 USERNAME = "Punkyherisson"
-TOKEN = ""
+TOKEN = os.getenv("TOKEN")
+
+if not TOKEN:
+    print("❌ TOKEN manquant ! Créez .env avec :")
+    print("TOKEN=ghp_votre_token")
+    print("USERNAME=Punkyherisson")
+    exit()
 
 def get_git_streak(username, token):
     url = "https://api.github.com/graphql"
@@ -23,7 +33,7 @@ def get_git_streak(username, token):
       }
     }
     """
-    headers = {"Authorization": f"bearer {token}"}
+    headers = {"Authorization": f"Bearer {token}"}
     variables = {"username": username}
 
     r = requests.post(url, json={"query": query, "variables": variables}, headers=headers)
@@ -34,7 +44,7 @@ def get_git_streak(username, token):
     weeks = calendar["weeks"]
     total = calendar["totalContributions"]
 
-    # Aplatir tous les jours dans une seule liste triée par date croissante
+    # Aplatir tous les jours
     days = []
     for week in weeks:
         for d in week["contributionDays"]:
@@ -44,17 +54,9 @@ def get_git_streak(username, token):
             })
     days.sort(key=lambda x: x["date"])
 
-    # Streak max (historiquement) et streak actuel
+    # Streak actuel (depuis la fin)
     longest_streak = 0
     current_streak = 0
-
-    # Pour le streak actuel, on va partir de la fin (jour le plus récent)
-    # et remonter tant qu'il y a des contributions sur les jours consécutifs.
-    # Si aujourd'hui n'a pas encore de contributions, on commence au dernier
-    # jour avec une contribution > 0.
-    today = date.today()
-
-    # trouver l'index du dernier jour avec une contribution > 0
     last_idx = None
     for i in range(len(days) - 1, -1, -1):
         if days[i]["count"] > 0:
@@ -63,16 +65,13 @@ def get_git_streak(username, token):
 
     if last_idx is not None:
         current_streak = 1
-        # remonter tant que les jours sont consécutifs et count > 0
         for i in range(last_idx, 0, -1):
             if days[i]["count"] > 0 and (days[i]["date"] - days[i - 1]["date"]).days == 1:
                 current_streak += 1
             else:
                 break
-    else:
-        current_streak = 0
 
-    # Calcul du plus long streak (toute la période)
+    # Plus long streak historique
     tmp_streak = 0
     for i, d in enumerate(days):
         if d["count"] > 0:
