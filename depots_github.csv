@@ -1,31 +1,31 @@
 Nom,Description,Langage,URL
 Automation,Collection of programs from Automate the Boring stuff with python,Jupyter Notebook,https://github.com/Punkyherisson/Automation
-bookbot,,Python,https://github.com/Punkyherisson/bookbot
+bookbot,1st project from Bootdev: Build your first local command-line application in Python and use the real tools that developers use every day.,Python,https://github.com/Punkyherisson/bookbot
 BookbotDocker,,Python,https://github.com/Punkyherisson/BookbotDocker
-BootdevAsteroid,,Python,https://github.com/Punkyherisson/BootdevAsteroid
+BootdevAsteroid,Build Asteroids using Python and Pygame (Bootdev project),Python,https://github.com/Punkyherisson/BootdevAsteroid
 BootdevGoServer,,Go,https://github.com/Punkyherisson/BootdevGoServer
 BootDevMazeSolver,BootDevMaze Python Project,Python,https://github.com/Punkyherisson/BootDevMazeSolver
 BootdevStaticSiteGenerator,,Python,https://github.com/Punkyherisson/BootdevStaticSiteGenerator
 BoulangerieChatGPT,Simulation Boulangerie en Python en utilisant Chat GPT,Python,https://github.com/Punkyherisson/BoulangerieChatGPT
 Calcul_IRPP2025,Calcul de l'impot sur le revenu 2025 en Python,Python,https://github.com/Punkyherisson/Calcul_IRPP2025
+ChatGPTPythonSQL,,Python,https://github.com/Punkyherisson/ChatGPTPythonSQL
 DonjonCollab,Donjon NoteBook Collab,Jupyter Notebook,https://github.com/Punkyherisson/DonjonCollab
 GarminConnect,Test pour lire les donnés de ma fenix,Python,https://github.com/Punkyherisson/GarminConnect
+JaponaisAvecReplitEtPython,"Une suite d'outils Python pour apprendre et pratiquer le japonais. Ce projet rassemble plusieurs bibliothèques pour la conversion de caractères, la lecture des kanji, la traduction et l'utilisation d'un dictionnaire japonais-anglais.",Python,https://github.com/Punkyherisson/JaponaisAvecReplitEtPython
 JavascriptDOM,,,https://github.com/Punkyherisson/JavascriptDOM
 JeuDeLangues,,Python,https://github.com/Punkyherisson/JeuDeLangues
 JeuGrammaireEspagnole,Jeu de Grammaire Espagnole en Python,Jupyter Notebook,https://github.com/Punkyherisson/JeuGrammaireEspagnole
 LaFormePasLesFormes,Application Python dietetique et sport,Python,https://github.com/Punkyherisson/LaFormePasLesFormes
 learn-cicd-starter,"The starter code for the ""Learn CICD"" course on Boot.dev",Go,https://github.com/Punkyherisson/learn-cicd-starter
 LearnDockerHub,,Go,https://github.com/Punkyherisson/LearnDockerHub
-LearnGitGithub,Approfondir Git et Githubs,,https://github.com/Punkyherisson/LearnGitGithub
+LearnGitGithub,Approfondir Git et Githubs,Python,https://github.com/Punkyherisson/LearnGitGithub
 LearningAI,"A collection of using different AIs, mostly with free accounts",,https://github.com/Punkyherisson/LearningAI
-LearnReplit,Collection Of sources to learn Replit,,https://github.com/Punkyherisson/LearnReplit
+LearnReplit,Collection Of sources to learn Replit,Python,https://github.com/Punkyherisson/LearnReplit
 MaBoulangerie,Jeu de gestion de Boulangerie,Python,https://github.com/Punkyherisson/MaBoulangerie
-MammothPython,Store and view exercices on Mammoth Training,Jupyter Notebook,https://github.com/Punkyherisson/MammothPython
 MaTodolist,Simple DailyTo do list with Log in a textfile ,Python,https://github.com/Punkyherisson/MaTodolist
 megacorp,The starter repo for the Git 2 course on Boot.dev,Shell,https://github.com/Punkyherisson/megacorp
+MultiLanguageMatch,Multi Language Match Game,Python,https://github.com/Punkyherisson/MultiLanguageMatch
+MyJapaneseGames,Noter ma progression sur des jeux pour apprendre le japonais et faire des petits jeux.,,https://github.com/Punkyherisson/MyJapaneseGames
+NewMammothCourses,Study Tech Courses on the new platform,Python,https://github.com/Punkyherisson/NewMammothCourses
 numpy-100,100 numpy exercises (with solutions),,https://github.com/Punkyherisson/numpy-100
-PerplexityUsecases,Using Perplexity effectively,,https://github.com/Punkyherisson/PerplexityUsecases
-PowershellTuto,Project to understand Posershell scripts and usage,,https://github.com/Punkyherisson/PowershellTuto
-Prompt-Engineering-Guide,"🐙 Guides, papers, lecture, notebooks and resources for prompt engineering",,https://github.com/Punkyherisson/Prompt-Engineering-Guide
-PromptDungeon,,Python,https://github.com/Punkyherisson/PromptDungeon
-Punkybot,Discord BOT,Python,https://github.com/Punkyherisson/Punkybot
+Packtlearning,Collection of Packt tutorials,Python,https://github.com/Punkyherisson/Packtlearning
