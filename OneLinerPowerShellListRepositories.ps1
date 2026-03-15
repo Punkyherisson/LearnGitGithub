@@ -1,0 +1,1 @@
+Get-ChildItem -Directory | Where-Object { Test-Path "$($_.FullName)\.git" } | ForEach-Object { Push-Location $_.FullName; Write-Host "=== $($_.Name) ===" -ForegroundColor Cyan; git status -s; git log --oneline -3; Pop-Location; "" }
